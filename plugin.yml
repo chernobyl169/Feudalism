@@ -1,0 +1,92 @@
+name: Feudalism
+main: com.gmail.chernobyl169.feudalism.FeudalismPlugin
+version: 1.5.1
+author: chernobyl169
+description: Feudalism system for Bukkit!
+
+commands:
+  quad:
+    aliases: [q, kingdom]
+    description: "Kingdom commands"
+    usage: "Usage: /quad"
+  qid:
+    aliases: [id]
+    description: "Identify item in hand"
+    usage: "Usage: /qid"
+  qt:
+    aliases: [t, tell]
+    description: "Private message"
+    usage: "Usage: /qt <user> <message>"
+  qr:
+    aliases: [r, reply]
+    description: "Private message reply"
+    usage: "Usage: /qr <message>"
+  qwho:
+    aliases: [who]
+    description: "Player lookup"
+    usage: "Usage: /qwho <user>"
+  qwhois:
+    aliases: [whois]
+    description: "Player status"
+    usage: "Usage: /qwhois <user>"
+  qzone:
+    aliases: [zone, z]
+    description: "Location lookup"
+    usage: "Usage: /qzone <user>"
+  qhelp:
+    description: "Game help"
+    usage: "Usage: /qhelp"
+  qtp:
+    description: "Teleport to another player"
+    usage: "Usage: /qtp <user>"
+    permission: kingdoms.ruler
+  qback:
+    aliases: [back]
+    description: "Return to your previous location"
+    usage: "Usage: /qback"
+    permission: kingdoms.ruler
+  qspawn:
+    aliases: [spawn]
+    description: "Teleport to spawn"
+    usage: "Usage: /qspawn"
+    permission: kingdoms.ruler
+  qseen:
+    aliases: [seen]
+    description: "Show last-seen information on a player"
+    usage: "Usage: /qseen <user>"
+    permission: kingdoms.ruler
+  qmute:
+    aliases: [mute]
+    description: "Mute or unmute a player"
+    usage: "Usage: /qmute <user>"
+    permission: kingdoms.ruler
+  qafk:
+    aliases: [afk]
+    description: "Display an AFK message"
+    usage: "Usage: /qafk"
+    permission: kingdoms.donor
+  qhome:
+    aliases: [home]
+    description: "Teleport to your bed"
+    usage: "Usage: /qhome"
+    permission: kingdoms.donor
+  qsethome:
+    aliases: [sethome]
+    description: "Set your bed spawn"
+    usage: "Usage: /qsethome"
+    permission: kingdoms.donor
+
+permissions:
+  kingdoms.admin:
+    description: "Access to administrative features."
+    default: op
+  kingdoms.ruler:
+    description: "Access to ruler features."
+    default: op
+  kingdoms.donor:
+    description: "Access to donor features."
+    default: false
+  kingdoms.player:
+    description: "Access to basic functions."
+    default: true
+

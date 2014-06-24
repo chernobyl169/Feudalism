@@ -1,0 +1,26 @@
+spawnrad: 30
+saferad: 100
+namene: "North East"
+namenw: "North West"
+namese: "South East"
+namesw: "South West"
+kingne: "nobody"
+kingnw: "nobody"
+kingse: "nobody"
+kingsw: "nobody"
+statne:
+  nw: 0
+  sw: 0
+  se: 0
+statnw:
+  ne: 0
+  sw: 0
+  se: 0
+statse:
+  ne: 0
+  nw: 0
+  sw: 0
+statsw:
+  ne: 0
+  nw: 0
+  se: 0
